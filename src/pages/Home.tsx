@@ -46,7 +46,7 @@ export function Home() {
                 <Link to="/products" className="bg-gradient-to-r from-[#ff4e00] to-[#ffcd00] hover:scale-105 text-black px-6 py-3 md:px-8 md:py-4 rounded-full font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(255,78,0,0.4)] flex items-center gap-2 text-sm md:text-base">
                   <ShoppingBag className="w-4 h-4 md:w-5 md:h-5" /> Shop Our Sauces <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                 </Link>
-                <Link to="/about" className="bg-transparent hover:bg-gradient-to-r hover:from-[#ff4e00] hover:to-[#ffcd00] hover:text-black hover:border-transparent backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold uppercase tracking-wider transition-all border border-white/20 flex items-center gap-2 text-sm md:text-base group">
+                <Link to="/about" className="bg-transparent hover:bg-gradient-to-r hover:from-[#ff4e00] hover:to-[#ffcd00] hover:scale-105 hover:text-black hover:border-transparent hover:shadow-[0_0_20px_rgba(255,78,0,0.4)] backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold uppercase tracking-wider transition-all border border-white/20 flex items-center gap-2 text-sm md:text-base group">
                   <PlayCircle className="w-4 h-4 md:w-5 md:h-5 group-hover:text-black" /> View Our Story
                 </Link>
               </div>
@@ -66,12 +66,12 @@ export function Home() {
                initial={{ opacity: 0, scale: 0, rotate: -45 }}
                animate={{ opacity: 1, scale: 1, rotate: 0 }}
                transition={{ duration: 0.6, delay: 0.6, type: "spring", bounce: 0.5 }}
-               className="absolute -top-6 -left-6 lg:top-10 lg:-left-10 z-40 pointer-events-none"
+               className="absolute top-[10%] left-[5%] lg:top-[15%] lg:-left-[5%] z-50 pointer-events-none"
               >
                 <motion.div 
                   animate={{ y: [0, -15, 0], rotate: [0, 10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="text-3xl lg:text-5xl filter drop-shadow-lg"
+                  className="text-4xl lg:text-6xl filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
                 >
                   🌶️
                 </motion.div>
@@ -81,12 +81,12 @@ export function Home() {
                 initial={{ opacity: 0, scale: 0, rotate: 45 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 transition={{ duration: 0.6, delay: 0.8, type: "spring", bounce: 0.5 }}
-                className="absolute -bottom-6 -left-2 lg:-bottom-10 lg:-left-4 z-40 pointer-events-none"
+                className="absolute bottom-[10%] left-[5%] lg:bottom-[15%] lg:-left-[5%] z-50 pointer-events-none"
               >
                 <motion.div 
                   animate={{ y: [0, 20, 0], rotate: [0, -15, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="text-3xl lg:text-5xl filter drop-shadow-lg"
+                  className="text-4xl lg:text-6xl filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
                 >
                   🧄
                 </motion.div>
@@ -96,12 +96,12 @@ export function Home() {
                 initial={{ opacity: 0, scale: 0, rotate: -45 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 transition={{ duration: 0.6, delay: 1.0, type: "spring", bounce: 0.5 }}
-                className="absolute top-4 -right-4 lg:top-20 lg:-right-10 z-40 pointer-events-none"
+                className="absolute top-[15%] right-[5%] lg:top-[20%] lg:-right-[5%] z-50 pointer-events-none"
               >
                 <motion.div 
                   animate={{ y: [0, -20, 0], rotate: [0, 20, 0] }}
                   transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                  className="text-3xl lg:text-5xl filter drop-shadow-lg"
+                  className="text-4xl lg:text-6xl filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
               >
                   🍅
                 </motion.div>
@@ -111,12 +111,12 @@ export function Home() {
               initial={{ opacity: 0, scale: 0, rotate: 45 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ duration: 0.6, delay: 1.2, type: "spring", bounce: 0.5 }}
-              className="absolute -bottom-4 -right-4 lg:bottom-10 lg:-right-8 z-40 pointer-events-none"
+              className="absolute bottom-[15%] right-[5%] lg:bottom-[20%] lg:-right-[5%] z-50 pointer-events-none"
               >
              <motion.div 
               animate={{ y: [0, 15, 0], rotate: [0, -10, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="text-3xl lg:text-5xl filter drop-shadow-lg"
+              className="text-4xl lg:text-6xl filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]"
               >
                 🌿
               </motion.div>
@@ -195,60 +195,54 @@ export function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Moments to Cherish Section */}
       <section className="py-24 bg-[#0F0A08] relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-black uppercase tracking-tighter text-white mb-4">Loved by our Customers</h2>
-            <p className="text-white/70 text-lg font-medium">Don't just take our word for it. See what real people are saying about our sauces.</p>
+            <h2 className="text-4xl font-black uppercase tracking-tighter text-white mb-4">Moments to Cherish</h2>
+            <p className="text-white/70 text-lg font-medium">Because good food brings people together.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                id: 1,
-                name: "Ayesha K.",
-                review: "The Smoky Burger Sauce is an absolute game changer! It tastes exactly like the premium sauces you get at high-end burger joints.",
-                rating: 5,
-              },
-              {
-                id: 2,
-                name: "Usman A.",
-                review: "I've tried many local brands, but Dippis Garden's Chili Garlic sauce has the perfect balance of spice and flavor. Highly recommended!",
-                rating: 5,
-              },
-              {
-                id: 3,
-                name: "Fatima S.",
-                review: "Their Mayo Garlic is so rich and creamy. It's become a staple in our household for sandwiches and fries. Love the packaging too!",
-                rating: 5,
-              }
-            ].map((testimonial) => (
-              <motion.div
-                key={testimonial.id}
-                whileHover={{ y: -10 }}
-                className="bg-white/5 rounded-3xl p-8 relative border border-white/10 transition-transform backdrop-blur-sm"
-              >
-                <Quote className="w-10 h-10 text-[#ffcd00]/20 absolute top-6 right-6" />
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-[#ffcd00] text-[#ffcd00]" />
-                  ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative group rounded-[2rem] overflow-hidden shadow-[0_0_30px_rgba(255,78,0,0.15)] border-2 border-white/10"
+            >
+              <img 
+                src={new URL('../assets/images/regenerated_image_1784527419436.png', import.meta.url).href} 
+                alt="Friends enjoying burgers" 
+                className="w-full h-[450px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                <div>
+                  <h3 className="text-3xl font-black uppercase text-white mb-2 italic">Burgers & Laughter</h3>
+                  <p className="text-white/80 font-medium">The perfect combo for any weekend hangout.</p>
                 </div>
-                <p className="text-white/90 font-medium leading-relaxed mb-6 relative z-10">
-                  "{testimonial.review}"
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#ff4e00] to-[#ffcd00] rounded-full flex items-center justify-center text-black font-bold uppercase shadow-[0_0_15px_rgba(255,78,0,0.3)]">
-                    {testimonial.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white">{testimonial.name}</h4>
-                    <span className="text-xs text-white/60 font-medium uppercase tracking-wider">Verified Buyer</span>
-                  </div>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative group rounded-[2rem] overflow-hidden shadow-[0_0_30px_rgba(255,78,0,0.15)] border-2 border-white/10"
+            >
+              <img 
+                src={new URL('../assets/images/regenerated_image_1784527570251.png', import.meta.url).href} 
+                alt="Friends enjoying pizza and pasta" 
+                className="w-full h-[450px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                <div>
+                  <h3 className="text-3xl font-black uppercase text-white mb-2 italic">Pizza Nights</h3>
+                  <p className="text-white/80 font-medium">Elevate every slice with a touch of magic.</p>
                 </div>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

@@ -52,7 +52,7 @@ export function Footer() {
             <h3 className="font-black text-black tracking-widest uppercase text-[11px] mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-black/80 font-medium">
-                <MapPin className="w-5 h-5 text-[#ff4e00] shrink-0" />
+                <MapPin className="w-5 h-5 text-black shrink-0" />
                 <span>45 link Shujah colony<br />G T road lahore</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-black/80 font-medium">
