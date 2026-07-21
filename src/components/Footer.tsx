@@ -13,10 +13,11 @@ export function Footer() {
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 group mb-6">
               <div className="h-16 w-32 md:w-40 flex items-center justify-center shrink-0">
-                <img src={logoImg} alt="DG Logo" className="w-full h-full object-contain mix-blend-multiply" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.opacity = '0'} />
+                <img src={logoImg} alt="DG Logo" className="w-full h-full object-contain mix-blend-multiply" />
               </div>
               <div className="flex flex-col justify-center">
-                <span className="text-2xl font-black font-serif italic tracking-normal text-black leading-none">DIPPIS GARDEN</span>
+                <span className="text-2xl font-black font-serif italic tracking-normal text-black leading-none">DIPPI GARDEN</span>
+                <span className="text-[10px] font-bold text-black/70 tracking-[0.2em] uppercase mt-1">Taste The Perfection</span>
               </div>
             </Link>
             <p className="text-sm text-black/80 leading-relaxed font-medium">

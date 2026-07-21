@@ -38,7 +38,6 @@ export function About() {
             <img 
               src={founderImg} 
               alt="Syed Sheraz Mehboob - Founder & CEO" 
-              referrerPolicy="no-referrer"
               className="relative z-10 rounded-[3rem] shadow-2xl shadow-[#ff4e00]/20 w-full h-[600px] object-cover object-top hover:scale-[1.02] transition-all duration-700"
             />
           </div>
