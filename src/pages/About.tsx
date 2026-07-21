@@ -1,7 +1,7 @@
 import React from 'react';
 import { Leaf, Award, Users } from 'lucide-react';
 import { motion } from 'motion/react';
-import founderImg from '../assets/images/regenerated_image_1784655070799.png';
+import founderImg from '../assets/images/cheff.png';
 
 export function About() {
   return (

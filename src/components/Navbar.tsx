@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { ShoppingCart, Menu, X, Leaf } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { motion, AnimatePresence } from 'motion/react';
-import logoImg from '../assets/images/logo_dippis_garden_1784535903245.jpg';
+import logoImg from '../assets/images/dippis_garden_logo_final.png';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,8 +28,8 @@ export function Navbar() {
           <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-14 h-14 rounded-full overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.1)] transition-shadow group-hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] bg-[#fdfbf7] flex items-center justify-center shrink-0">
-                <img src={logoImg} alt="DG Logo" className="w-full h-full object-cover opacity-90" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.opacity = '0'} />
+              <div className="h-16 w-32 md:w-40 flex items-center justify-center shrink-0">
+                <img src={logoImg} alt="DG Logo" className="w-full h-full object-contain mix-blend-multiply" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.opacity = '0'} />
               </div>
               <div className="flex flex-col justify-center">
                 <span className="text-2xl font-black font-serif italic tracking-normal text-black leading-none">DIPPIS GARDEN</span>

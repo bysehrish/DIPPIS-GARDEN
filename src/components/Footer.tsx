@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Leaf, Instagram, Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
-import logoImg from '../assets/images/logo_dippis_garden_1784535903245.jpg';
+import logoImg from '../assets/images/dippis_garden_logo_final.png';
 
 export function Footer() {
   return (
@@ -12,8 +12,8 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 group mb-6">
-              <div className="w-14 h-14 rounded-full overflow-hidden shadow-[0_0_15px_rgba(255,78,0,0.3)] transition-shadow group-hover:shadow-[0_0_25px_rgba(255,78,0,0.5)] bg-[#fdfbf7] border border-black/10 flex items-center justify-center shrink-0">
-                <img src={logoImg} alt="DG Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.opacity = '0'} />
+              <div className="h-16 w-32 md:w-40 flex items-center justify-center shrink-0">
+                <img src={logoImg} alt="DG Logo" className="w-full h-full object-contain mix-blend-multiply" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.opacity = '0'} />
               </div>
               <div className="flex flex-col justify-center">
                 <span className="text-2xl font-black font-serif italic tracking-normal text-black leading-none">DIPPIS GARDEN</span>
