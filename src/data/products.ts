@@ -5,6 +5,9 @@ import imgChiliGarlic from '../assets/images/chili_garlic_sauce_1784535922061.jp
 import imgMustard from '../assets/images/yellow_mustard_sauce_1784536197073.jpg';
 import imgBurgerSauce from '../assets/images/burger_sauce_1784536217195.jpg';
 import imgKetchup from '../assets/images/tomato_ketchup_1784536231627.jpg';
+import imgKetchup1kg from '../assets/images/ketchup_1kg_pouch_fixed_1784633093148.jpg';
+import imgMayo5kg from '../assets/images/mayo_pouch_5kg_1784632546659.jpg';
+import imgChiliGarlic1kg from '../assets/images/chili_garlic_1kg_pouch_fixed_1784633114680.jpg';
 
 export const products: Product[] = [
   {
@@ -60,7 +63,7 @@ export const products: Product[] = [
     name: 'Tomato Ketchup - 1kg Pouch',
     description: 'Our classic ketchup in a convenient 1kg wholesale pouch for restaurants and large families.',
     price: 12.99,
-    image: imgKetchup,
+    image: imgKetchup1kg,
     category: 'Wholesale'
   },
   {
@@ -68,7 +71,7 @@ export const products: Product[] = [
     name: 'Mayo Garlic - 5kg Bulk',
     description: 'Premium mayo garlic sauce in a massive 5kg bulk pouch. Perfect for catering and commercial use.',
     price: 45.99,
-    image: imgMayoGarlic,
+    image: imgMayo5kg,
     category: 'Wholesale'
   },
   {
@@ -76,7 +79,7 @@ export const products: Product[] = [
     name: 'Chili Garlic Sauce - 1kg Pouch',
     description: 'Spice up your commercial kitchen with our 1kg wholesale chili garlic pouch.',
     price: 15.99,
-    image: imgChiliGarlic,
+    image: imgChiliGarlic1kg,
     category: 'Wholesale'
   }
 ];

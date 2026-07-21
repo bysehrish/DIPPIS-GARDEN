@@ -12,6 +12,7 @@ import { Contact } from './pages/Contact';
 import { Cart } from './pages/Cart';
 import { Admin } from './pages/Admin';
 import { OrderTracking } from './pages/OrderTracking';
+import { Recipes } from './pages/Recipes';
 import { CartProvider } from './context/CartContext';
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="track" element={<OrderTracking />} />
             <Route path="cart" element={<Cart />} />
             <Route path="admin" element={<Admin />} />
+            <Route path="recipes" element={<Recipes />} />
           </Route>
         </Routes>
       </HashRouter>

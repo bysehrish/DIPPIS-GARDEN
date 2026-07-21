@@ -57,6 +57,60 @@ export function About() {
         </div>
       </section>
 
+      {/* Moments to Cherish Section */}
+      <section className="py-24 bg-gradient-to-b from-transparent to-black/30 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-black uppercase tracking-tighter text-white mb-4">Moments to Cherish</h2>
+            <p className="text-xl text-white/70 max-w-2xl mx-auto font-light leading-relaxed">
+              We believe food is the best way to bring people together. Whether it's a family dinner or hanging out with friends, Dippis Garden is there to make the moment memorable.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative group rounded-[2rem] overflow-hidden shadow-xl shadow-black/50 border border-white/10"
+            >
+              <img 
+                src={new URL('../assets/images/regenerated_image_1784527419436.png', import.meta.url).href} 
+                alt="Friends enjoying burgers with Dippis Garden" 
+                className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                <div>
+                  <h3 className="text-2xl font-black uppercase text-white mb-2">Burgers & Laughter</h3>
+                  <p className="text-white/80 font-light">The perfect combo for any weekend hangout.</p>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative group rounded-[2rem] overflow-hidden shadow-xl shadow-black/50 border border-white/10"
+            >
+              <img 
+                src={new URL('../assets/images/regenerated_image_1784527570251.png', import.meta.url).href} 
+                alt="Friends enjoying pizza and pasta with Dippis Garden" 
+                className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                <div>
+                  <h3 className="text-2xl font-black uppercase text-white mb-2">Pizza Nights</h3>
+                  <p className="text-white/80 font-light">Elevate every slice with a touch of magic.</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
       <section className="py-24 bg-black/20 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

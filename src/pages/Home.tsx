@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Leaf, ShieldCheck, Heart, Star, Quote, PlayCircle, ShoppingBag, Award, ThumbsUp, MapPin, Utensils, Building, Coffee } from 'lucide-react';
 import { motion } from 'motion/react';
 import { products } from '../data/products';
-import { HeroCarousel } from '../components/HeroCarousel';
+import heroCinematicImg from '../assets/images/regenerated_image_1784634537582.png';
 
 export function Home() {
   const featuredProducts = products.slice(0, 3);
@@ -11,14 +11,14 @@ export function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-b from-[#0F0A08] via-[#1A0F0A] to-[#22120C] text-white py-20 px-6 flex flex-col justify-center items-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-80px)] bg-gradient-to-b from-[#0F0A08] via-[#1A0F0A] to-[#22120C] text-white flex flex-col justify-center items-center overflow-hidden">
         {/* Background Elements */}
       
         <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent z-0"></div>
         {/* Glows */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-[#ff4e00] to-[#ffcd00] blur-[150px] rounded-full opacity-20 z-0 pointer-events-none"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-4 lg:py-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Left Column: Text Content */}
@@ -26,14 +26,8 @@ export function Home() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center lg:text-left flex flex-col justify-center py-4 lg:py-8"
+              className="text-center lg:text-left flex flex-col justify-center pt-8 pb-4 lg:py-0"
             >
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 border border-white/20 rounded-full px-4 py-1.5 mb-4 md:mb-6">
-                <Star className="w-4 h-4 text-[#ff4e00]" />
-                <span className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">Pakistan's Most Loved Sauces</span>
-              </div>
-
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black italic tracking-tighter leading-none mb-4 md:mb-6 uppercase">
                 Crafted With <br className="hidden md:block" />
                 <span className="text-[#ff4e00] drop-shadow-[0_0_20px_rgba(255,78,0,0.6)]">Passion</span>
@@ -52,42 +46,12 @@ export function Home() {
                 <Link to="/products" className="bg-gradient-to-r from-[#ff4e00] to-[#ffcd00] hover:scale-105 text-black px-6 py-3 md:px-8 md:py-4 rounded-full font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(255,78,0,0.4)] flex items-center gap-2 text-sm md:text-base">
                   <ShoppingBag className="w-4 h-4 md:w-5 md:h-5" /> Shop Our Sauces <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                 </Link>
-                <Link to="/about" className="bg-transparent hover:bg-white/5 backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold uppercase tracking-wider transition-all border border-white/20 flex items-center gap-2 text-sm md:text-base">
-                  <PlayCircle className="w-4 h-4 md:w-5 md:h-5" /> Watch Our Story
+                <Link to="/about" className="bg-transparent hover:bg-gradient-to-r hover:from-[#ff4e00] hover:to-[#ffcd00] hover:text-black hover:border-transparent backdrop-blur-sm text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold uppercase tracking-wider transition-all border border-white/20 flex items-center gap-2 text-sm md:text-base group">
+                  <PlayCircle className="w-4 h-4 md:w-5 md:h-5 group-hover:text-black" /> View Our Story
                 </Link>
               </div>
 
-              {/* Stats/Features */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 text-left">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <Leaf className="w-6 h-6 sm:w-8 sm:h-8 text-[#ffcd00]" />
-                  <div>
-                    <div className="text-white font-black text-base sm:text-lg">25+</div>
-                    <div className="text-white/60 text-[10px] sm:text-xs uppercase tracking-widest">Premium<br/>Products</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#ffcd00]" />
-                  <div>
-                    <div className="text-white font-black text-base sm:text-lg">100%</div>
-                    <div className="text-white/60 text-[10px] sm:text-xs uppercase tracking-widest">Quality<br/>Ingredients</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-[#ffcd00]" />
-                  <div>
-                    <div className="text-white font-black text-base sm:text-lg">12K+</div>
-                    <div className="text-white/60 text-[10px] sm:text-xs uppercase tracking-widest">Happy<br/>Customers</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-[#ffcd00]" />
-                  <div>
-                    <div className="text-white font-black text-base sm:text-lg">15+</div>
-                    <div className="text-white/60 text-[10px] sm:text-xs uppercase tracking-widest">Cities<br/>Served</div>
-                  </div>
-                </div>
-              </div>
+
             </motion.div>
 
             {/* Right Column: Hero Product Collection */}
@@ -95,19 +59,19 @@ export function Home() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative h-[500px] w-full flex items-center justify-center mt-10 lg:mt-0"
+              className="relative w-full flex items-center justify-center mt-10 lg:mt-0"
             >
               {/* Floating Ingredients */}
               <motion.div
                initial={{ opacity: 0, scale: 0, rotate: -45 }}
                animate={{ opacity: 1, scale: 1, rotate: 0 }}
                transition={{ duration: 0.6, delay: 0.6, type: "spring", bounce: 0.5 }}
-               className="absolute top-10 left-10 z-20"
+               className="absolute -top-6 -left-6 lg:top-10 lg:-left-10 z-40 pointer-events-none"
               >
                 <motion.div 
                   animate={{ y: [0, -15, 0], rotate: [0, 10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="text-4xl filter drop-shadow-lg"
+                  className="text-3xl lg:text-5xl filter drop-shadow-lg"
                 >
                   🌶️
                 </motion.div>
@@ -117,12 +81,12 @@ export function Home() {
                 initial={{ opacity: 0, scale: 0, rotate: 45 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 transition={{ duration: 0.6, delay: 0.8, type: "spring", bounce: 0.5 }}
-                className="absolute bottom-20 left-4 z-20"
+                className="absolute -bottom-6 -left-2 lg:-bottom-10 lg:-left-4 z-40 pointer-events-none"
               >
                 <motion.div 
                   animate={{ y: [0, 20, 0], rotate: [0, -15, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="text-4xl filter drop-shadow-lg"
+                  className="text-3xl lg:text-5xl filter drop-shadow-lg"
                 >
                   🧄
                 </motion.div>
@@ -132,12 +96,12 @@ export function Home() {
                 initial={{ opacity: 0, scale: 0, rotate: -45 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 transition={{ duration: 0.6, delay: 1.0, type: "spring", bounce: 0.5 }}
-                className="absolute top-20 right-10 z-20"
+                className="absolute top-4 -right-4 lg:top-20 lg:-right-10 z-40 pointer-events-none"
               >
                 <motion.div 
                   animate={{ y: [0, -20, 0], rotate: [0, 20, 0] }}
                   transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                  className="text-4xl filter drop-shadow-lg"
+                  className="text-3xl lg:text-5xl filter drop-shadow-lg"
               >
                   🍅
                 </motion.div>
@@ -147,20 +111,28 @@ export function Home() {
               initial={{ opacity: 0, scale: 0, rotate: 45 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ duration: 0.6, delay: 1.2, type: "spring", bounce: 0.5 }}
-              className="absolute bottom-10 right-20 z-20"
+              className="absolute -bottom-4 -right-4 lg:bottom-10 lg:-right-8 z-40 pointer-events-none"
               >
              <motion.div 
               animate={{ y: [0, 15, 0], rotate: [0, -10, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="text-4xl filter drop-shadow-lg"
+              className="text-3xl lg:text-5xl filter drop-shadow-lg"
               >
                 🌿
               </motion.div>
             </motion.div>
 
-          {/* Product Bottles Carousel */}
-          <div className="relative w-full h-[400px] md:h-full max-w-3xl mx-auto flex items-center justify-center mt-12 lg:mt-0 z-30">
-            <HeroCarousel />
+          {/* Product Bottles Collection Image */}
+          <div className="relative w-full max-w-full lg:w-[115%] lg:-ml-[15%] xl:-ml-[20%] flex items-center justify-center z-30 pointer-events-none">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="relative w-full rounded-2xl lg:rounded-[2rem] overflow-hidden shadow-[0_0_50px_rgba(255,78,0,0.2)] border-2 border-white/10 group pointer-events-auto"
+            >
+              <img src={heroCinematicImg} alt="Dippis Garden Premium Sauces" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 mix-blend-overlay"></div>
+            </motion.div>
           </div>
         </motion.div>
       </div>

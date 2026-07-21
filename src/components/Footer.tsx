@@ -16,7 +16,7 @@ export function Footer() {
                 <img src={logoImg} alt="DG Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" onError={(e) => e.currentTarget.style.opacity = '0'} />
               </div>
               <div className="flex flex-col justify-center">
-                <span className="text-2xl font-bold tracking-tighter text-black leading-none">DIPPIS<span className="text-white">GARDEN</span></span>
+                <span className="text-2xl font-black font-serif italic tracking-normal text-black leading-none">DIPPIS GARDEN</span>
               </div>
             </Link>
             <p className="text-sm text-black/80 leading-relaxed font-medium">
