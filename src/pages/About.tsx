@@ -1,7 +1,7 @@
 import React from 'react';
 import { Leaf, Award, Users } from 'lucide-react';
 import { motion } from 'motion/react';
-import founderImg from '../assets/images/regenerated_image_1784537026358.png';
+import founderImg from '../assets/images/regenerated_image_1784655070799.png';
 
 export function About() {
   return (
@@ -37,8 +37,9 @@ export function About() {
             <div className="absolute inset-0 bg-[#ff4e00]/20 rounded-[3rem] transform -rotate-3 scale-105 border border-[#ff4e00]/30"></div>
             <img 
               src={founderImg} 
-              alt="Founder" 
-              className="relative z-10 rounded-[3rem] shadow-2xl shadow-[#ff4e00]/20 w-full h-[600px] object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+              alt="Syed Sheraz Mehboob - Founder & CEO" 
+              referrerPolicy="no-referrer"
+              className="relative z-10 rounded-[3rem] shadow-2xl shadow-[#ff4e00]/20 w-full h-[600px] object-cover object-top hover:scale-[1.02] transition-all duration-700"
             />
           </div>
           
