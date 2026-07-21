@@ -73,17 +73,17 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative group rounded-[2rem] overflow-hidden shadow-xl shadow-black/50 border border-white/10"
+              className="relative group rounded-[2rem] overflow-hidden shadow-[0_0_30px_rgba(255,78,0,0.15)] border-2 border-white/10"
             >
               <img 
-                src={new URL('../assets/images/regenerated_image_1784527419436.png', import.meta.url).href} 
-                alt="Friends enjoying burgers with Dippis Garden" 
-                className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                src={new URL('../assets/images/spicy_pasta_recipe_1784634632792.jpg', import.meta.url).href} 
+                alt="Chili Garlic Sauce with Pasta" 
+                className="w-full h-[450px] object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
                 <div>
-                  <h3 className="text-2xl font-black uppercase text-white mb-2">Burgers & Laughter</h3>
-                  <p className="text-white/80 font-light">The perfect combo for any weekend hangout.</p>
+                  <h3 className="text-3xl font-black uppercase text-white mb-2 italic">Spicy Pasta Nights</h3>
+                  <p className="text-white/80 font-medium">Elevate your pasta with our bold Chili Garlic Sauce.</p>
                 </div>
               </div>
             </motion.div>
@@ -93,17 +93,57 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative group rounded-[2rem] overflow-hidden shadow-xl shadow-black/50 border border-white/10"
+              className="relative group rounded-[2rem] overflow-hidden shadow-[0_0_30px_rgba(255,78,0,0.15)] border-2 border-white/10"
             >
               <img 
-                src={new URL('../assets/images/regenerated_image_1784527570251.png', import.meta.url).href} 
-                alt="Friends enjoying pizza and pasta with Dippis Garden" 
-                className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                src={new URL('../assets/images/cinematic_sandwich_mayo_1784639827452.jpg', import.meta.url).href} 
+                alt="Mayo Garlic with Sandwiches" 
+                className="w-full h-[450px] object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
                 <div>
-                  <h3 className="text-2xl font-black uppercase text-white mb-2">Pizza Nights</h3>
-                  <p className="text-white/80 font-light">Elevate every slice with a touch of magic.</p>
+                  <h3 className="text-3xl font-black uppercase text-white mb-2 italic">Rich & Creamy Sandwiches</h3>
+                  <p className="text-white/80 font-medium">The perfect spread for your daily meals.</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="relative group rounded-[2rem] overflow-hidden shadow-[0_0_30px_rgba(255,78,0,0.15)] border-2 border-white/10"
+            >
+              <img 
+                src={new URL('../assets/images/pakistani_friends_feast_1784640137554.jpg', import.meta.url).href} 
+                alt="Friends enjoying a feast with Dippis Garden sauces" 
+                className="w-full h-[450px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                <div>
+                  <h3 className="text-3xl font-black uppercase text-white mb-2 italic">Weekend Feasts</h3>
+                  <p className="text-white/80 font-medium">Making every gathering more flavorful.</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="relative group rounded-[2rem] overflow-hidden shadow-[0_0_30px_rgba(255,78,0,0.15)] border-2 border-white/10"
+            >
+              <img 
+                src={new URL('../assets/images/pakistani_family_party_1784640161751.jpg', import.meta.url).href} 
+                alt="Family burger party with sauces" 
+                className="w-full h-[450px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                <div>
+                  <h3 className="text-3xl font-black uppercase text-white mb-2 italic">Family Parties</h3>
+                  <p className="text-white/80 font-medium">Joyful moments with the perfect taste.</p>
                 </div>
               </div>
             </motion.div>

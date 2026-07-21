@@ -5,7 +5,7 @@ import logoImg from '../assets/images/logo_dippis_garden_1784535903245.jpg';
 
 export function Footer() {
   return (
-    <footer className="border-t border-black/10 bg-gradient-to-r from-[#ff4e00] to-[#ffcd00] pt-16 pb-8 shrink-0">
+    <footer className="border-t border-black/10 bg-gradient-to-r from-[#ffcd00] via-[#ffb000] to-[#ff9500] pt-16 pb-8 shrink-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
