@@ -32,7 +32,7 @@ export function Navbar() {
                 <img src={logoImg} alt="DG Logo" className="w-full h-full object-contain mix-blend-multiply" />
               </div>
               <div className="flex flex-col justify-center">
-                <span className="text-2xl font-black font-serif italic tracking-normal text-black leading-none">DIPPI GARDEN</span>
+                <span className="text-2xl font-black font-serif italic tracking-normal text-black leading-none whitespace-nowrap">DIPPIS GARDENS</span>
               </div>
             </Link>
           </div>
