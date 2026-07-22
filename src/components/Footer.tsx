@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Leaf, Instagram, Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
-import logoImg from '../assets/images/dippis_garden_logo_final.png';
+import logoImg from '../assets/images/dippis_gardens_logo_1784533663653.jpg';
 
 export function Footer() {
   return (
